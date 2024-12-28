@@ -7,7 +7,22 @@ function symlink() {
 }
 
 # Ensure all necessary directories in home exist
+mkdir -p ~/.vim
 mkdir -p ~/.config/nvim
+
+if [ -d ~/.vim ]
+then
+	dir_name="~/.vim"
+	echo "Directory $dir_name is created"
+fi
+
+if [ -d ~/.config/nvim ]
+then
+	dir_name="~/.config/nvim"
+	echo "Directory $dir_name is created"
+fi
+
+echo ""
 
 # Create symlinks for Zsh
 symlink ~/.dotfiles/zsh/.zshrc ~/.zshrc
