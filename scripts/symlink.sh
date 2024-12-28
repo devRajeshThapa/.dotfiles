@@ -2,7 +2,6 @@
 
 # Symlink function
 function symlink() {
-    mkdir -p "$(dirname "$2")" # Ensure the destination directory exists
     ln -sf "$1" "$2"
     echo "Symlinked $1 to $2"
 }
