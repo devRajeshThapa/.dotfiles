@@ -45,3 +45,5 @@ symlink ~/.dotfiles/vim/plugins.vim ~/.vim/plugins.vim
 # Create symlinks for Neovim
 symlink ~/.dotfiles/config/nvim/init.vim ~/.config/nvim/init.vim
 
+# Source the bashrc file to apply changes
+source ~/.bashrc
